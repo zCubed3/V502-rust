@@ -1,3 +1,5 @@
+// Only typedef'ed here because in C it's typedef'ed
+
 pub type Byte = u8;
 pub type Char = i8;
 
