@@ -6,3 +6,9 @@ pub type Short = i16;
 
 pub type UInt = u32;
 pub type Int = i32;
+
+#[repr(C)]
+pub enum Featureset {
+    MOS6502,
+    W65C02S
+}

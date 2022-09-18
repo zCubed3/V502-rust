@@ -1,15 +1,21 @@
 pub mod types;
+pub mod consts;
 pub mod vm;
+pub mod vcpu;
 
 #[cfg(test)]
 mod tests {
-    use crate::v502_make_word;
+    use crate::*;
+    use std::ptr;
 
     #[test]
-    fn test_lib() {
+    fn test_vm() {
         unsafe {
-            let w = v502_make_word(1u8, 0);
-            assert_eq!(w, 256);
+            let createinfo = vm::VMCreateInfo { hunk_size: consts::BINARY_SIZE, feature_set: types::Featureset::MOS6502 };
+
+            let vm_instance = vm::v502_create_vm(&createinfo);
+            
+            assert_ne!(vm_instance, ptr::null_mut());
         }
     }
 }
