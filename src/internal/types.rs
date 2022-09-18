@@ -7,6 +7,9 @@ pub type Short = i16;
 pub type UInt = u32;
 pub type Int = i32;
 
+pub type FileLen = UInt;
+pub type VPRGIdent = UInt;
+
 #[repr(C)]
 pub enum Featureset {
     MOS6502,
