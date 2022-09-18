@@ -4,3 +4,6 @@
 [submodule "V502"]
 	path = V502
 	url = git@github.com:zCubed3/V502.git
+[submodule "extern/V502"]
+	path = extern/V502
+	url = git@github.com:zCubed3/V502.git
