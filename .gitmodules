@@ -1,0 +1,6 @@
+[submodule "libs/V502"]
+	path = libs/V502
+	url = git@github.com:zCubed3/V502.git
+[submodule "V502"]
+	path = V502
+	url = git@github.com:zCubed3/V502.git
